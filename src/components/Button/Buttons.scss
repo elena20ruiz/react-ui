@@ -1,0 +1,58 @@
+@import "../../main.scss";
+
+.btn {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 auto;
+    text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        transform: translateY(1px);
+        filter: saturate(125%);
+    }
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color-dark;
+    color: $white-color;
+    &:hover {
+        background-color: $primary-color-light;
+        border: 0;
+    }
+    &:active {
+        text-decoration: none;
+        outline: 0;
+        border: 0;
+    }
+}
+
+.btn-secondary {
+    color: $primary-color;
+    background-color: transparent;
+    outline: 1px solid $primary-color;
+    outline-offset: -1px;
+    &:hover {
+        background-color: $white-color;
+    }
+}
+
+.btn-tertiary {
+    color: $primary-color;
+    background-color: transparent;
+    &:hover {
+        background-color: $white-color;
+    }
+}

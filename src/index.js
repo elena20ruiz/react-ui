@@ -1,3 +1,3 @@
-import { exportAllDeclaration } from "babel-types"
+import Button from './components/Button/Button.jsx';
 
-export { MainButton } from './components/MainButton'
+export { Button };
